@@ -38,6 +38,16 @@
               "target": "Package",
               "version": "[5.0.0, )",
               "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )",
+              "generatePathProperty": true
+            },
+            "Suave": {
+              "target": "Package",
+              "version": "[2.6.1, )",
+              "generatePathProperty": true
             }
           },
           "imports": [
