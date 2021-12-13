@@ -51,6 +51,27 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Suave/2.6.1": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "0.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Suave.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Suave.dll": {}
+        }
       }
     }
   },
@@ -81,11 +102,54 @@
         "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
       ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Suave/2.6.1": {
+      "sha512": "L7kdsUF4YgZUWZrEipFTIq+AgJOR71lc/QMtwvWccA+f+AYqPPeQKQlwE14iLLaJ29GpYQCAd0+u51V3Bdc4JA==",
+      "type": "package",
+      "path": "suave/2.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Suave.dll",
+        "lib/netstandard2.1/Suave.pdb",
+        "lib/netstandard2.1/Suave.xml",
+        "suave.2.6.1.nupkg.sha512",
+        "suave.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "FSharp.Core >= 5.0.0"
+      "FSharp.Core >= 5.0.0",
+      "Newtonsoft.Json >= 13.0.1",
+      "Suave >= 2.6.1"
     ]
   },
   "packageFolders": {
@@ -124,6 +188,16 @@
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[5.0.0, )",
+            "generatePathProperty": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )",
+            "generatePathProperty": true
+          },
+          "Suave": {
+            "target": "Package",
+            "version": "[2.6.1, )",
             "generatePathProperty": true
           }
         },

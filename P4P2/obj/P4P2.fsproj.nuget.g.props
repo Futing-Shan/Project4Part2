@@ -16,6 +16,12 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/hangye/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
+=======
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\手越啊单\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+    <PkgSuave Condition=" '$(PkgSuave)' == '' ">C:\Users\手越啊单\.nuget\packages\suave\2.6.1</PkgSuave>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\手越啊单\.nuget\packages\newtonsoft.json\13.0.1</PkgNewtonsoft_Json>
+>>>>>>> 7ca61e3db6d0e673b62e1cf02e7ad7dacd914918
   </PropertyGroup>
 </Project>
