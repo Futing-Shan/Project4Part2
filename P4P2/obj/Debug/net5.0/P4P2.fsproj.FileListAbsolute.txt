@@ -1,0 +1,3 @@
+/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/obj/Debug/net5.0/P4P2.fsproj.AssemblyReference.cache
+/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/obj/Debug/net5.0/P4P2.AssemblyInfoInputs.cache
+/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/obj/Debug/net5.0/P4P2.AssemblyInfo.fs

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6nTB+TzvUmGjVW/v1xx1YnOLdo4esosP4e+65sW+su0V8P2tp8CfLJlYjJAZvBvw2cezWusWJGl6kcy2baYSbg==",
+  "success": true,
+  "projectFilePath": "/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/P4P2.fsproj",
+  "expectedPackageFiles": [
+    "/Users/hangye/.nuget/packages/fsharp.core/5.0.0/fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
