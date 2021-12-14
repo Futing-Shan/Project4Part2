@@ -7,25 +7,23 @@ open System.IO
 
 let postDocRaw (url:string) (data: string) : string =
 
-      let request = WebRequest.Create(url)
-      request.Method        <- "POST"
-      request.ContentType   <- "application/json; charset=UTF-8"
+    let request = WebRequest.Create(url)
+    request.Method        <- "POST"
+    request.ContentType   <- "application/json; charset=UTF-8"
 
-      use wstream = request.GetRequestStream() 
-      use sw = new StreamWriter(wstream)
-      data|>JsonConvert.SerializeObject|>sw.Write
-      wstream.Close()
+    do(
+    use wstream = request.GetRequestStream() 
+    use sw = new StreamWriter(wstream)
+    printfn("%A") (data|>JsonConvert.SerializeObject)
+    data|>JsonConvert.SerializeObject|>sw.Write
+    )
 
       // todo：json再转一步string
-      let response  = request.GetResponse()
-      use reader     = new StreamReader(response.GetResponseStream())
-      let output = reader.ReadToEnd()
+    let response  = request.GetResponse()
+    use reader     = new StreamReader(response.GetResponseStream())
+    let output = reader.ReadToEnd()
 
-      reader.Close()
-      response.Close()
-      request.Abort()
-
-      output
+    output
 
 
 
@@ -50,5 +48,5 @@ let getDocRaw (url:string)  : string =
 
 
 
-printfn "response:%A" (postDocRaw "http://10.136.245.87:8080/hello" "hello")
+printfn "response:%A" (postDocRaw "http://10.20.0.130:8080/register" "add")
 Console.ReadLine()|>ignore
