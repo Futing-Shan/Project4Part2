@@ -158,11 +158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
+      "projectUniqueName": "d:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
       "projectName": "P4P2",
-      "projectPath": "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
+      "projectPath": "d:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
       "packagesPath": "C:\\Users\\手越啊单\\.nuget\\packages\\",
-      "outputPath": "D:\\UF\\dosp\\Project4Part2\\P4P2\\obj\\",
+      "outputPath": "d:\\UF\\dosp\\Project4Part2\\P4P2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\手越啊单\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -9,14 +9,27 @@ open Suave.Files
 open Suave.RequestErrors
 open Suave.Logging
 open Suave.Utils
+open Suave.Json
 
 open System
 open System.Net
+open System
+open System.Text
+open System.Security.Cryptography
+open System.Collections.Generic
+
+open System.Diagnostics
 
 open Suave.Sockets
 open Suave.Sockets.Control
 open Suave.WebSocket
 
+open System.Text.Json.Serialization
+open Newtonsoft.Json
+
+
+let user_port = new Dictionary<string,string>()
+let userlist = new Dictionary<string,int>()
 
 let port = 8080
 
@@ -24,7 +37,7 @@ let cfg =
 
           { defaultConfig with
 
-              bindings = [ HttpBinding.createSimple HTTP "10.136.245.87" port]}
+              bindings = [ HttpBinding.createSimple HTTP "10.20.0.130" port]}
 
 
 let ws (webSocket : WebSocket) (context: HttpContext) =
@@ -70,6 +83,33 @@ let ws (webSocket : WebSocket) (context: HttpContext) =
     }
 
 
+let decodeRequst<'a> (req:HttpRequest) = 
+    printfn("in decode request")
+    let getString rawForm = UTF8.toString rawForm
+    printfn("rawForm:%A") req.rawForm
+    JsonConvert.DeserializeObject(req.rawForm|>getString,typeof<'a>):?>'a
+
+
+
+let registerProcess=
+    request(
+        fun x ->
+            printfn("x:= %A") x    
+            let data = decodeRequst<String> x
+            printfn("decode data:%A") data
+            let username=data            // let username = msg.ToString().Substring(7)
+            printfn("username:%s") username
+            if(userlist.ContainsKey(username)) then //旧用户登陆
+                userlist.Item(username) <- 1     
+                printfn ("%s already exits,now login") username
+                printfn "current user: %A" userlist
+            else     //首次登陆
+                userlist.Add(username, 1)
+                printfn "user name: %s has been added sucessfully" (username)
+                printfn "current user: %A" userlist
+            OK "successlogin"   
+    )
+
 
 
 let app =
@@ -77,7 +117,7 @@ let app =
           choose [ 
             path "/websocket" >=> handShake ws
             GET >=> choose [ path "/" >=> request (fun _ -> OK "Hello World!")]
-            POST >=> choose[ path "/hello" >=> OK "Hello POST"
+            POST >=> choose[ path "/register" >=> registerProcess
                              path "/goodbye" >=> OK "Good bye POST" ] 
             NOT_FOUND "Found no handlers." ]
 
