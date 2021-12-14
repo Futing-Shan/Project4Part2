@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/P4P2.fsproj": {}
+    "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj": {}
   },
   "projects": {
-    "/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/P4P2.fsproj": {
+    "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/P4P2.fsproj",
+        "projectUniqueName": "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
         "projectName": "P4P2",
-        "projectPath": "/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/P4P2.fsproj",
-        "packagesPath": "/Users/hangye/.nuget/packages/",
-        "outputPath": "/Users/hangye/Desktop/DOSP/Project4Part2/P4P2/obj/",
+        "projectPath": "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
+        "packagesPath": "C:\\Users\\手越啊单\\.nuget\\packages\\",
+        "outputPath": "D:\\UF\\dosp\\Project4Part2\\P4P2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/hangye/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\手越啊单\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

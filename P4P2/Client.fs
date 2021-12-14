@@ -43,10 +43,10 @@ let getDocRaw (url:string)  : string =
       output
 
 
+let registerfun()
 
 
 
 
-
-printfn "response:%A" (postDocRaw "http://10.20.0.130:8080/register" "add")
-Console.ReadLine()|>ignore
+// printfn("response:%A" (postDocRaw "http://10.20.0.130:8080/register" "add")
+// Console.ReadLine()|>ignore

@@ -5,7 +5,7 @@
     <WarnOn>3390;$(WarnOn)</WarnOn>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Client.fs"/>
+    <Compile Include="Program.fs"/>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Suave" Version="2.6.1"/>
