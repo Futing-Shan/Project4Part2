@@ -58,3 +58,4 @@ D:\UF\dosp\Project4Part2\P4P2\obj\Debug\net5.0\P4P2.fsproj.CopyComplete
 D:\UF\dosp\Project4Part2\P4P2\obj\Debug\net5.0\P4P2.dll
 D:\UF\dosp\Project4Part2\P4P2\obj\Debug\net5.0\P4P2.pdb
 D:\UF\dosp\Project4Part2\P4P2\obj\Debug\net5.0\P4P2.genruntimeconfig.cache
+d:\UF\dosp\Project4Part2\P4P2\obj\Debug\net5.0\P4P2.fsproj.CoreCompileInputs.cache
