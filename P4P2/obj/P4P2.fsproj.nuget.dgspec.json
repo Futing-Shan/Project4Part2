@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj": {}
+    "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj": {}
   },
   "projects": {
-    "d:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj": {
+    "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
+        "projectUniqueName": "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
         "projectName": "P4P2",
-        "projectPath": "d:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
+        "projectPath": "D:\\UF\\dosp\\Project4Part2\\P4P2\\P4P2.fsproj",
         "packagesPath": "C:\\Users\\手越啊单\\.nuget\\packages\\",
-        "outputPath": "d:\\UF\\dosp\\Project4Part2\\P4P2\\obj\\",
+        "outputPath": "D:\\UF\\dosp\\Project4Part2\\P4P2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\手越啊单\\AppData\\Roaming\\NuGet\\NuGet.Config"
